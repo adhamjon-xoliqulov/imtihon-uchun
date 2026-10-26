@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+:root {
+    --main-background: rgba(43, 43, 43, 1);
+    --for-cards: rgba(59, 59, 59, 1);
+    --purple: rgba(162, 89, 255, 1);
+    --main-font: "Work Sans", sans-serif;
+    --secondary-font: "Space Mono", monospace;
+}
+
+
+.layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-background);
+}
+
+.container {
+    width: 80%;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo_side {
+        column-gap: 15px;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            font-family: var(--secondary-font);
+        }
+    }
+
+    .manu {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+
+        ul {
+            display: flex;
+            column-gap: 40px;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+            }
+        }
+
+        button {
+            border: none;
+            background-color: var(--purple);
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            text-align: center;
+        }
+    }
+}
+
+.hero {
+    margin: 60px 0;
+    display: flex;
+
+    .content-side h1 {
+        width: 350px;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 110%;
+        text-transform: capitalize;
+    }
+
+    .content-side>p {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    .content-side button {
+        margin-top: 30px;
+        border: none;
+        background-color: var(--purple);
+        width: 200px;
+        height: 45px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    .stats {
+        margin-top: 30px;
+        display: flex;
+        column-gap: 50px;
+
+        h3 {
+            font-family: var(--secondary-font);
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 160%;
+            text-transform: capitalize;
+        }
+    }
+
+    .pic-side {
+        background-color: var(--for-cards);
+        border-radius: 15px;
+        height: 400px;
+
+        >img {
+            width: 410px;
+            height: 301px;
+        }
+
+        h4 {
+            margin-left: 15px;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+
+        >div {
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.one {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .title>h3 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+    .title>p {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    .pics {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        .cards>img {
+            width: 280px;
+            height: 280px;
+        }
+
+        .more {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            >div {
+                background-color: var(--purple);
+                border-radius: 15px;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-family: var(--secondary-font);
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+
+        .cards>h4 {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+
+        .profile {
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.two{
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .title >h3{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+    .title>p {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+}
